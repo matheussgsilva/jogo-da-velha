@@ -1,19 +1,17 @@
 .menu {
-    display: inline-block;
-    width: 10px;
-    border-bottom: 2px solid var(--color-fourth);
+    display: block;
+    text-indent: -99999px;
 }
 
-.menu::after {
-    display: fixed;
-    width: 10px;
-    border-bottom: 2px solid var(--color-fourth);
-    top: -5px;
+.menu::after, .menu::before, .menu > .center {
+    display: block;
+    content: '';
+    background-color: var(--color-fourth);
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
 }
 
-.menu::before {
-    display: fixed;
-    width: 10px;
-    border-bottom: 2px solid var(--color-fourth);
-    top: 5px;
+.menu::before, .menu > .center {
+    margin-bottom: 5px;
 }
