@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './components/Header';
+import Card from './objects/Card';
 
-class App extends Component {
-  render() {
+function App() {
     return (
+      <div>
       <Header />
+      <Card />
+      </div>
     );
-  }
 }
 
 export default App;
