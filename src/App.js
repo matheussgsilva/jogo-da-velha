@@ -8,7 +8,7 @@ function App() {
       <div>
       <Header />
       <Card />
-      <Player />
+      <Player player="x" />
       </div>
     );
 }

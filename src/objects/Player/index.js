@@ -1,11 +1,16 @@
 import React from "react";
 import './styles.css';
 import playerX from '../../images/player-x.png';
+import playerO from '../../images/player-o.png';
 
-const Player = () => {
+const Player = ({player}) => {
+    const players = [];
+    players['x'] = playerX;
+    players['o'] = playerO;
+
     return (
         <button className="player">
-            <img src={playerX} alt="Jogador X" />
+            <img src={players[player]} alt={`Jogador ${player}`} />
         </button>
     )
 }
