@@ -1,12 +1,8 @@
-import React, { Fragment } from "react";
-import Label from "../Label";
+import React from "react";
 
-const Input = ({ value, id, content, type = "text"}) => {
+const Input = ({ value, id, type = "text"}) => {
     return (
-        <Fragment>
         <input id={id} className="input" type={type} value={value} />
-        <Label htmlFor={id} content={content} />
-        </Fragment>
     )
 }
 
