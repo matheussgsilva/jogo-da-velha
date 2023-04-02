@@ -1,7 +1,5 @@
 .card {
     background-color: var(--color-zero);
-    width: 290px;
-    height: 290px;
     border-radius: var(--spacing-radius);
     box-shadow: var(--color-light-negative);
 }
