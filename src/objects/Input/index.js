@@ -1,8 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Label from "../Label";
 
-const Input = ({ value }) => {
+const Input = ({ value, id, content }) => {
     return (
-        <input className="input" type="checkbox" value={value} />
+        <Fragment>
+        <input id={id} className="input" type="checkbox" value={value} />
+        <Label htmlFor={id} content={content} />
+        </Fragment>
     )
 }
 
