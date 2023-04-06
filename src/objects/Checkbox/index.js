@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import "./styles.css";
 import Input from "../Input";
 import Label from "../Label";
 
